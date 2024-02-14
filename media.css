@@ -1,0 +1,79 @@
+@import url('./main.css');
+
+@media only screen and (max-width: 390px) {
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* gap: 20px; */
+        background: var(--color3);
+    }
+    nav .logo{
+        position: relative;
+        left: 50px;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    nav .nav-btn {
+        transform: scale(0.7);
+    }
+
+    .main-content{
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+/* -------------  430 px   --------------------------------- */
+@media only screen and (max-width: 430px) {
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        background: var(--color3);
+    }
+    nav .logo{
+        position: relative;
+        /* left: 50px; */
+    }
+    nav .menu-list li a{
+        display: block;
+    }
+    nav .menu-list{
+        display: none;
+    }
+    nav .menu-list.active{
+        display: flex;
+    }
+    nav .menu-list .nav-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    nav ul li a{
+        display: none;
+    }
+    nav ul li:nth-child(5) button{
+        display: block;
+    }
+    nav .nav-btn {
+        display: none;
+        transform: scale(0.8);
+    }
+
+    .main-content{
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
